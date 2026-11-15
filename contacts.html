@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Контакты и бронирование — база отдыха «Яры»</title>
+<meta name="description" content="Бронирование домиков на базе отдыха «Яры»: телефон +7 705 500 19 25, WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body data-page="contacts">
+<header class="hdr" id="hdr"></header>
+<main>
+<div class="page-head"><div class="wrap">
+  <div class="crumbs"><a href="index.html">Главная</a> / Контакты</div>
+  <span class="eyebrow">Бронирование и вопросы</span>
+  <h1>Контакты</h1>
+  <p class="lead" style="margin-top:18px">Позвоните или напишите в WhatsApp — расскажем о свободных домиках, ценах и ответим на любые вопросы.</p>
+</div></div>
+<section>
+  <div class="wrap">
+    <div class="ccards">
+      <a class="ccard" data-tel><i data-ic="tel"></i><b>+7 705 500 19 25</b><span>Позвонить администратору</span></a>
+      <a class="ccard" data-wa><i data-ic="wa"></i><b>WhatsApp</b><span>Написать — ответим в чате</span></a>
+      <a class="ccard" href="location.html"><i data-ic="pin"></i><b>6 км от Новой Бухтармы</b><span>Берег Бухтарминского водохранилища, ВКО</span></a>
+    </div>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="eyebrow">Заявка</span>
+      <h2>Заявка на бронирование</h2>
+      <p class="lead" style="margin:18px 0 24px">Заполните форму — откроется WhatsApp с готовым сообщением, останется только нажать «Отправить».</p>
+      <ul class="ticks">
+        <li>Сезон: июнь — август</li>
+        <li>При бронировании от 7 дней возможна скидка</li>
+        <li>Цена зависит от домика и дат заезда</li>
+      </ul>
+    </div>
+    <form class="form" id="book">
+      <label>Ваше имя<input id="f-name" placeholder="Как к вам обращаться" autocomplete="name"></label>
+      <label>Гостей<input id="f-guests" type="number" min="1" max="20" placeholder="4"></label>
+      <label>Заезд<input id="f-in" type="date"></label>
+      <label>Выезд<input id="f-out" type="date"></label>
+      <label class="full">Домик<select id="f-house"></select></label>
+      <label class="full">Комментарий<textarea id="f-msg" rows="3" placeholder="Пожелания, вопросы"></textarea></label>
+      <button class="btn btn-wa full" type="submit" data-ic="wa">Отправить в WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="ftr" id="ftr"></footer>
+<script src="js/data.js?v=4"></script><script src="js/app.js?v=4"></script>
+</body>
+</html>
