@@ -149,6 +149,8 @@ const PAGES = {
         <a class="btn btn-wa" href="${waLink(msg)}" target="_blank" rel="noopener">${IC.wa}Забронировать в WhatsApp</a>
         <a class="btn btn-pine" href="tel:${SITE.phone}">${IC.tel}${SITE.phoneText}</a>
       </aside></div>`;
+    const hs = $(".hs-nums"), on = $(".hs-nums a.on");
+    hs.scrollLeft = on.offsetLeft - hs.offsetLeft - (hs.clientWidth - on.offsetWidth) / 2;
     let cur = 0;
     const set = i => { cur = i; $("#mainimg").src = h.imgs[i]; $$(".thumbs img").forEach((t, k) => t.classList.toggle("on", k === i)); };
     $$(".thumbs img").forEach(t => t.onclick = () => set(+t.dataset.i));
